@@ -5,13 +5,15 @@ import Avatar from "./Avatar";
 
 function createCard(contact) {
   return (
-  <Card 
-    name={contact.name} 
-    img={contact.imgURL}
-    tel={contact.phone}
-    email={contact.email}
+    <Card 
+      id={contact.id} 
+      key={contact.id}  
+      name={contact.name} 
+      img={contact.imgURL}
+      tell={contact.phone}
+      email={contact.email}
 
-  />
+    />
   );
 
 }
